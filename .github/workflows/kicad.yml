@@ -53,7 +53,6 @@ jobs:
           cp -f "${{ github.workspace }}/schematic.pdf" output/schematic.pdf
           cp -f "${{ github.workspace }}/bom.csv" output/bom.csv
           cp -rf "${{ github.workspace }}/gerbers" output/gerbers
-          cp -rf "${{ github.workspace }}/drill" output/drill
 
           ls -la output
 
@@ -64,7 +63,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -f output/schematic.pdf output/bom.csv output/gerbers ouput/drill
+          git add -f output/schematic.pdf output/bom.csv output/gerbers
 
           if git diff --cached --quiet; then
             echo "No output changes to commit."
@@ -83,4 +82,3 @@ jobs:
             ${{ github.workspace }}/output/schematic.pdf
             ${{ github.workspace }}/output/bom.csv
             ${{ github.workspace }}/output/gerbers
-            ${{ github.workspace }}/output/drill
