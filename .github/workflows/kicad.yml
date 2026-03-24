@@ -31,9 +31,9 @@ jobs:
         with:
           name: Production files
           path: |
-            ${{ github.workspace }}/schmatic.pdf
+            ${{ github.workspace }}/sch.pdf
             ${{ github.workspace }}/bom.csv
-            ${{ github.workspace }}/gerbers.zip
+            ${{ github.workspace }}/gbr.zip
 
       - name: Run KiCad ERC
         id: erc
