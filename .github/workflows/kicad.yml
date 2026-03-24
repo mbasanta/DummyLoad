@@ -19,23 +19,23 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+        uses: actions/checkout@v6
 
-      - name: Run KiCad Actions
+      - name: Run KiCad actions
         id: production
         uses: actions-for-kicad/kicad-actions@v1.8-k9.0
         with:
-          dir: .
-          schematic_file: DummyLoad.kicad_sch
+          schematic_file_name: ./DummyLoad.kicad_sch
+          run_erc: true
+          schematic_output_pdf: true
+          schematic_output_bom: true
+          schematic_output_bom_fields: "Reference,Value,Footprint,${QUANTITY},${DNP},Mouser PN,Datasheet"
+          schematic_output_bom_labels: "Refs,Value,Footprint,Qty,DNP,Mouser PN,Datasheet"
+
           pcb_file: DummyLoad.kicad_pcb
-          sch_pdf: true
-          sch_pdf_file: sch.pdf
-          sch_bom: true
-          sch_bom_file: bom.csv
-          pcb_gerbers: true
-          pcb_gerbers_file: gbr.zip
+          footprint_libraries: "footprint-library=./MiscFootprints.pretty"
+          run_drc: true
+          pcb_output_gerbers_and_drill: true
 
       - name: Verify KiCad step succeeded
         if: ${{ steps.production.outcome != 'success' }}
@@ -49,9 +49,10 @@ jobs:
           set -euo pipefail
           mkdir -p output
 
-          cp -f "${{ github.workspace }}/sch.pdf" output/schematic.pdf
+          cp -f "${{ github.workspace }}/schematic.pdf" output/schematic.pdf
           cp -f "${{ github.workspace }}/bom.csv" output/bom.csv
-          cp -f "${{ github.workspace }}/gbr.zip" output/gerbers.zip
+          cp -f "${{ github.workspace }}/gerbers" output/gerbers
+          cp -f "${{ github.workspace }}/drill" output/drill
 
           ls -la output
 
@@ -80,4 +81,5 @@ jobs:
           path: |
             ${{ github.workspace }}/output/schematic.pdf
             ${{ github.workspace }}/output/bom.csv
-            ${{ github.workspace }}/output/gerbers.zip
+            ${{ github.workspace }}/output/gerbers
+            ${{ github.workspace }}/output/drill
