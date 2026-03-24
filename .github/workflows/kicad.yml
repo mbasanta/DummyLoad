@@ -52,8 +52,8 @@ jobs:
 
           cp -f "${{ github.workspace }}/schematic.pdf" output/schematic.pdf
           cp -f "${{ github.workspace }}/bom.csv" output/bom.csv
-          cp -f "${{ github.workspace }}/gerbers" output/gerbers
-          cp -f "${{ github.workspace }}/drill" output/drill
+          cp -rf "${{ github.workspace }}/gerbers" output/gerbers
+          cp -rf "${{ github.workspace }}/drill" output/drill
 
           ls -la output
 
@@ -64,7 +64,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -f output/schematic.pdf output/bom.csv output/gerbers.zip
+          git add -f output/schematic.pdf output/bom.csv output/gerbers ouput/drill
 
           if git diff --cached --quiet; then
             echo "No output changes to commit."
@@ -75,7 +75,7 @@ jobs:
           git push
 
       - name: Upload production files
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: ${{ !cancelled() && steps.production.outcome == 'success' }}
         with:
           name: Production files
