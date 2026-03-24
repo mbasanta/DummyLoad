@@ -32,7 +32,7 @@ jobs:
           schematic_output_bom_fields: "Reference,Value,Footprint,${QUANTITY},${DNP},Mouser PN,Datasheet"
           schematic_output_bom_labels: "Refs,Value,Footprint,Qty,DNP,Mouser PN,Datasheet"
 
-          pcb_file: DummyLoad.kicad_pcb
+          pcb_file_name: DummyLoad.kicad_pcb
           footprint_libraries: "footprint-library=./MiscFootprints.pretty"
           run_drc: true
           pcb_output_gerbers_and_drill: true
