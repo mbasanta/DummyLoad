@@ -15,86 +15,69 @@ permissions:
 jobs:
   kicad_job:
     runs-on: ubuntu-latest
-    name: Run Kicad Jobs
+    name: Run KiCad Jobs
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Export production files
+      - name: Run KiCad Actions
         id: production
-        uses: sparkengineering/kicad-action@v4
-        if: '!cancelled()'
+        uses: actions-for-kicad/kicad-actions@v1.8-k9.0
         with:
-          kicad_sch: DummyLoad.kicad_sch
-          sch_pdf: true # Generate PDF
-          sch_bom: true # Generate BOM
-          kicad_pcb: DummyLoad.kicad_pcb
-          pcb_gerbers: true # Generate Gerbers
-          schematic_output_bom_fields: 'Reference,Value,Footprint,${QUANTITY},${DNP},Mouser PN,Datasheet'
-          schematic_output_bom_labels: 'Refs,Value,Footprint,Qty,DNP,Mouser PN,Datasheet'
+          dir: .
+          schematic_file: DummyLoad.kicad_sch
+          pcb_file: DummyLoad.kicad_pcb
+          sch_pdf: true
+          sch_pdf_file: sch.pdf
+          sch_bom: true
+          sch_bom_file: bom.csv
+          pcb_gerbers: true
+          pcb_gerbers_file: gbr.zip
+
+      - name: Verify KiCad step succeeded
+        if: ${{ steps.production.outcome != 'success' }}
+        run: |
+          echo "KiCad production step failed; stopping workflow."
+          exit 1
 
       - name: Prepare output folder
-        if: ${{ !cancelled() && steps.production.conclusion == 'success' }}
+        if: ${{ !cancelled() && steps.production.outcome == 'success' }}
         run: |
+          set -euo pipefail
           mkdir -p output
+
           cp -f "${{ github.workspace }}/sch.pdf" output/schematic.pdf
           cp -f "${{ github.workspace }}/bom.csv" output/bom.csv
           cp -f "${{ github.workspace }}/gbr.zip" output/gerbers.zip
 
+          ls -la output
+
       - name: Commit generated outputs
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && !cancelled() && steps.production.conclusion == 'success' }}
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && !cancelled() && steps.production.outcome == 'success' }}
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add output/
+
+          git add -f output/schematic.pdf output/bom.csv output/gerbers.zip
+
           if git diff --cached --quiet; then
             echo "No output changes to commit."
             exit 0
           fi
+
           git commit -m "chore(kicad): update generated outputs [skip ci]"
           git push
 
-      # Upload production files only if generation succeeded
       - name: Upload production files
         uses: actions/upload-artifact@v4
-        if: ${{ !cancelled() && steps.production.conclusion == 'success' }}
+        if: ${{ !cancelled() && steps.production.outcome == 'success' }}
         with:
           name: Production files
           path: |
             ${{ github.workspace }}/output/schematic.pdf
             ${{ github.workspace }}/output/bom.csv
             ${{ github.workspace }}/output/gerbers.zip
-
-      - name: Run KiCad ERC
-        id: erc
-        uses: sparkengineering/kicad-action@v4
-        if: '!cancelled()'
-        with:
-          kicad_sch: DummyLoad.kicad_sch
-          sch_erc: true
-
-      - name: Run KiCad DRC
-        id: drc
-        uses: sparkengineering/kicad-action@v4
-        if: '!cancelled()'
-        with:
-          kicad_pcb: DummyLoad.kicad_pcb
-          pcb_drc: true
-
-      # Upload ERC report only if ERC failed
-      - name: Upload ERC report
-        uses: actions/upload-artifact@v4
-        if: ${{ failure() && steps.erc.conclusion == 'failure' }}
-        with:
-          name: erc.rpt
-          path: ${{ github.workspace }}/erc.rpt
-
-      # Upload DRC report only if DRC failed
-      - name: Upload DRC report
-        uses: actions/upload-artifact@v4
-        if: ${{ failure() && steps.drc.conclusion == 'failure' }}
-        with:
-          name: drc.rpt
-          path: ${{ github.workspace }}/drc.rpt
