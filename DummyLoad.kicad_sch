@@ -2676,7 +2676,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 147.32 58.42 0)
 			(effects
 				(font
@@ -2694,7 +2694,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 147.32 58.42 0)
 			(effects
 				(font
@@ -2755,7 +2755,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 162.56 58.42 0)
 			(effects
 				(font
@@ -2773,7 +2773,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 162.56 58.42 0)
 			(effects
 				(font
@@ -2834,7 +2834,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 139.7 58.42 0)
 			(effects
 				(font
@@ -2852,7 +2852,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 139.7 58.42 0)
 			(effects
 				(font
@@ -2913,7 +2913,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 78.74 58.42 0)
 			(effects
 				(font
@@ -2931,7 +2931,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 78.74 58.42 0)
 			(effects
 				(font
@@ -2992,7 +2992,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 86.36 58.42 0)
 			(effects
 				(font
@@ -3010,7 +3010,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 86.36 58.42 0)
 			(effects
 				(font
@@ -3145,7 +3145,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 109.22 58.42 0)
 			(effects
 				(font
@@ -3163,7 +3163,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 109.22 58.42 0)
 			(effects
 				(font
@@ -3224,7 +3224,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 215.9 58.42 0)
 			(effects
 				(font
@@ -3242,7 +3242,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 215.9 58.42 0)
 			(effects
 				(font
@@ -3446,7 +3446,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 177.8 58.42 0)
 			(effects
 				(font
@@ -3464,7 +3464,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 177.8 58.42 0)
 			(effects
 				(font
@@ -3525,7 +3525,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 93.98 58.42 0)
 			(effects
 				(font
@@ -3543,7 +3543,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 93.98 58.42 0)
 			(effects
 				(font
@@ -3758,7 +3758,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 170.18 58.42 0)
 			(effects
 				(font
@@ -3776,7 +3776,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 170.18 58.42 0)
 			(effects
 				(font
@@ -3990,7 +3990,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 116.84 58.42 0)
 			(effects
 				(font
@@ -4008,7 +4008,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 116.84 58.42 0)
 			(effects
 				(font
@@ -4345,7 +4345,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 208.28 58.42 0)
 			(effects
 				(font
@@ -4363,7 +4363,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 208.28 58.42 0)
 			(effects
 				(font
@@ -4556,7 +4556,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 101.6 58.42 0)
 			(effects
 				(font
@@ -4574,7 +4574,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 101.6 58.42 0)
 			(effects
 				(font
@@ -4713,7 +4713,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 185.42 58.42 0)
 			(effects
 				(font
@@ -4731,7 +4731,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 185.42 58.42 0)
 			(effects
 				(font
@@ -4792,7 +4792,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 124.46 58.42 0)
 			(effects
 				(font
@@ -4810,7 +4810,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 124.46 58.42 0)
 			(effects
 				(font
@@ -4871,7 +4871,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 132.08 58.42 0)
 			(effects
 				(font
@@ -4889,7 +4889,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 132.08 58.42 0)
 			(effects
 				(font
@@ -5026,7 +5026,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 200.66 58.42 0)
 			(effects
 				(font
@@ -5044,7 +5044,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 200.66 58.42 0)
 			(effects
 				(font
@@ -5386,7 +5386,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 154.94 58.42 0)
 			(effects
 				(font
@@ -5404,7 +5404,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 154.94 58.42 0)
 			(effects
 				(font
@@ -5453,7 +5453,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA"
+		(property "Footprint" "Diode_SMD:Nexperia_CFP3_SOD-123W"
 			(at 63.5 120.65 0)
 			(effects
 				(font
@@ -5462,7 +5462,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/3/287/1/fm4001_fm4007.pdf"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/175/1/1N5711W.pdf"
 			(at 63.5 120.65 0)
 			(effects
 				(font
@@ -5498,7 +5498,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "583-FM4004"
+		(property "Mouser PN" "621-1N5711W-F"
 			(at 63.5 120.65 0)
 			(effects
 				(font
@@ -5558,7 +5558,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 223.52 58.42 0)
 			(effects
 				(font
@@ -5576,7 +5576,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 223.52 58.42 0)
 			(effects
 				(font
@@ -5784,7 +5784,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?20065"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 193.04 58.42 0)
 			(effects
 				(font
@@ -5802,7 +5802,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "279-CRGP2512F1K0"
+		(property "Mouser PN" "71-RCS12061K00FKEA"
 			(at 193.04 58.42 0)
 			(effects
 				(font
