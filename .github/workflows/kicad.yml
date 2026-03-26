@@ -34,8 +34,7 @@ jobs:
 
           pcb_file_name: DummyLoad.kicad_pcb
           footprint_libraries: "footprint-library=./MiscFootprints.pretty"
-          # TODO: Change when drc fixed
-          run_drc: false
+          run_drc: true
           pcb_output_gerbers_and_drill: true
 
       - name: Verify KiCad step succeeded
