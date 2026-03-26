@@ -5445,7 +5445,7 @@
 				)
 			)
 		)
-		(property "Value" "1N4004"
+		(property "Value" "1N5711"
 			(at 62.23 117.602 0)
 			(effects
 				(font
