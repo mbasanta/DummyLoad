@@ -36,6 +36,7 @@ jobs:
           footprint_libraries: "footprint-library=./MiscFootprints.pretty"
           run_drc: true
           pcb_output_gerbers_and_drill: true
+          pcb_output_layers: "F.Cu,B.Cu,F.Adhesive,B.Adhesive,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,User.Comments,Edge.Cuts,F.Courtyard,B.Courtyard"
 
       - name: Collect ERC/DRC diagnostics
         if: ${{ always() && steps.production.outcome != 'success' }}
