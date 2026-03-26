@@ -76,7 +76,7 @@ jobs:
 
           cp -f "${{ github.workspace }}/schematic.pdf" output/schematic.pdf
           cp -f "${{ github.workspace }}/bom.csv" output/bom.csv
-          cp -rf "${{ github.workspace }}/gerbers" output/gerbers
+          cp -rf "${{ github.workspace }}/gerbers" output
 
           ls -la output
 
