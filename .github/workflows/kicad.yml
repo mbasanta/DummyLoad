@@ -37,8 +37,33 @@ jobs:
           run_drc: true
           pcb_output_gerbers_and_drill: true
 
+      - name: Collect ERC/DRC diagnostics
+        if: ${{ always() && steps.production.outcome != 'success' }}
+        run: |
+          set -euo pipefail
+          mkdir -p diagnostics
+
+          # Gather common KiCad report/log file names from workspace.
+          find "${{ github.workspace }}" -type f \( \
+            -iname "*erc*" -o \
+            -iname "*drc*" -o \
+            -iname "*.rpt" -o \
+            -iname "*.report" -o \
+            -iname "*.log" \
+          \) -print0 | while IFS= read -r -d '' file; do
+            cp --parents "$file" diagnostics/
+          done
+
+      - name: Upload ERC/DRC diagnostics
+        uses: actions/upload-artifact@v7
+        if: ${{ always() && steps.production.outcome != 'success' }}
+        with:
+          name: KiCad diagnostics (ERC-DRC)
+          path: diagnostics
+          if-no-files-found: warn
+
       - name: Verify KiCad step succeeded
-        if: ${{ steps.production.outcome != 'success' }}
+        if: ${{ always() && steps.production.outcome != 'success' }}
         run: |
           echo "KiCad production step failed; stopping workflow."
           exit 1
