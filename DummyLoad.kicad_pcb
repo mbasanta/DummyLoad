@@ -3944,7 +3944,7 @@
 			(net 1 "GND")
 			(pinfunction "Ext")
 			(pintype "passive")
-			(uuid "d548750c-174d-48d6-9375-de88dc3bfec8")
+			(uuid "7289e6a4-a0dd-4a2d-9a17-090fedea44e0")
 		)
 		(pad "2" thru_hole oval
 			(at 5.08 -5.08 90)
@@ -3955,7 +3955,7 @@
 			(net 1 "GND")
 			(pinfunction "Ext")
 			(pintype "passive")
-			(uuid "5df786f7-da8b-44fe-8a6d-68f3e8b753ae")
+			(uuid "7289e6a4-a0dd-4a2d-9a17-090fedea44e0")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_Coaxial.3dshapes/BNC_Amphenol_B6252HB-NPP3G-50_Horizontal.wrl"
@@ -3967,6 +3967,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/3dShapes/CONBNC002.stp"
+			(offset
+				(xyz 0 5.1 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
 			)
 		)
 	)
