@@ -81,6 +81,8 @@ jobs:
           cp -f "${{ github.workspace }}/schematic.pdf" output/schematic.pdf
           cp -f "${{ github.workspace }}/bom.csv" output/bom.csv
           cp -rf "${{ github.workspace }}/gerbers" output
+          cp -f "${{ github.workspace }}/schematics/DummyLoad.svg" output/schematic.svg
+          cp -f "${{ github.workspace }}/pcb.svg" output/pcb.svg
 
           ls -la output
 
@@ -91,7 +93,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -f output/schematic.pdf output/bom.csv output/gerbers
+          git add -f output/schematic.pdf output/bom.csv output/gerbers output/schematic.svg output/pcb.svg
 
           if git diff --cached --quiet; then
             echo "No output changes to commit."
@@ -110,3 +112,5 @@ jobs:
             ${{ github.workspace }}/output/schematic.pdf
             ${{ github.workspace }}/output/bom.csv
             ${{ github.workspace }}/output/gerbers
+            ${{ github.workspace }}/output/schematic.svg
+            ${{ github.workspace }}/output/pcb.svg
