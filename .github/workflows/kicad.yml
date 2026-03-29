@@ -39,7 +39,7 @@ jobs:
           pcb_output_layers: "F.Cu,B.Cu,F.Adhesive,B.Adhesive,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,User.Comments,Edge.Cuts,F.Courtyard,B.Courtyard"
 
           schematic_output_svg: true
-          pcb_output_svg: true
+          pcb_output_image: true
 
       - name: Collect ERC/DRC diagnostics
         if: ${{ always() && steps.production.outcome != 'success' }}
@@ -82,7 +82,7 @@ jobs:
           cp -f "${{ github.workspace }}/bom.csv" output/bom.csv
           cp -rf "${{ github.workspace }}/gerbers" output
           cp -f "${{ github.workspace }}/schematics/DummyLoad.svg" output/schematic.svg
-          cp -f "${{ github.workspace }}/pcb.svg" output/pcb.svg
+          cp -f "${{ github.workspace }}/pcb.png" output/pcb.png
 
           ls -la output
 
@@ -113,4 +113,4 @@ jobs:
             ${{ github.workspace }}/output/bom.csv
             ${{ github.workspace }}/output/gerbers
             ${{ github.workspace }}/output/schematic.svg
-            ${{ github.workspace }}/output/pcb.svg
+            ${{ github.workspace }}/output/pcb.png
