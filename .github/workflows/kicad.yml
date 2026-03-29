@@ -40,6 +40,8 @@ jobs:
 
           schematic_output_svg: true
           pcb_output_image: true
+          pcb_output_image_floor: true
+          pcb_oupput_image_perspective: true
 
       - name: Collect ERC/DRC diagnostics
         if: ${{ always() && steps.production.outcome != 'success' }}
@@ -93,7 +95,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -f output/schematic.pdf output/bom.csv output/gerbers output/schematic.svg output/pcb.svg
+          git add -f output/schematic.pdf output/bom.csv output/gerbers output/schematic.svg output/pcb.png
 
           if git diff --cached --quiet; then
             echo "No output changes to commit."
