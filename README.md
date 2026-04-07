@@ -2,6 +2,14 @@
 
 KiCad project for a 50 ohm RF dummy load board with integrated attenuation and rectified measurement output.
 
+## Schematic
+
+![Schematic](output/schematic.svg)
+
+## PCB
+
+![PCB](output/pcb.png)
+
 ## Overview
 
 This repository contains the schematic, PCB, custom footprint library, and generated manufacturing artifacts for the DummyLoad board.
