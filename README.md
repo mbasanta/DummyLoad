@@ -13,6 +13,14 @@ From the schematic title block and notes:
   - Note in schematic: "40db Attenuation (use 3x 261 Ohm resistors for 30db)"
 - Includes a rectified voltage measurement point for RF power estimation
 
+## Schematic
+
+![Schematic](output/schematic.svg)
+
+## PCB
+
+![PCB](output/pcb.png)
+
 ## Main Files
 
 - `DummyLoad.kicad_sch`: KiCad schematic
