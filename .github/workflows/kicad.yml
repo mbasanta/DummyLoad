@@ -42,7 +42,7 @@ jobs:
           pcb_output_image: true
           pcb_output_image_floor: true
           pcb_oupput_image_perspective: true
-          pcb_output_image_rotate: "10,10,0"
+          pcb_output_image_rotate: "10,-15,0"
 
       - name: Collect ERC/DRC diagnostics
         if: ${{ always() && steps.production.outcome != 'success' }}
