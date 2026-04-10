@@ -3276,7 +3276,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "39181178-f0d8-447c-8151-937f5e9d914c")
-		(property "Reference" "TP2"
+		(property "Reference" "TP4"
 			(at 88.9 122.4279 0)
 			(effects
 				(font
@@ -3327,7 +3327,7 @@
 		(instances
 			(project ""
 				(path "/8955e49b-c499-4a31-89c9-ad9bd8b95ad7"
-					(reference "TP2")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -4677,6 +4677,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 78.74 64.77 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ce7a288-a317-4bac-bd75-dbe17ced50e8")
+		(property "Reference" "TP2"
+			(at 81.28 66.8019 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 69.3419 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm"
+			(at 73.66 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 78.74 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c350d008-6208-4a9d-b2bd-2d5a4b90b29e")
+		)
+		(instances
+			(project ""
+				(path "/8955e49b-c499-4a31-89c9-ad9bd8b95ad7"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 185.42 58.42 0)
 		(unit 1)
@@ -5429,6 +5496,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 78.74 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e396e2c3-c3f1-4cff-aee0-0d9aaaad0e66")
+		(property "Reference" "TP1"
+			(at 81.28 47.4979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RF In"
+			(at 81.28 50.0379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm"
+			(at 83.82 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 78.74 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c350d008-6208-4a9d-b2bd-2d5a4b90b29e")
+		)
+		(instances
+			(project ""
+				(path "/8955e49b-c499-4a31-89c9-ad9bd8b95ad7"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D")
 		(at 63.5 120.65 180)
 		(unit 1)
@@ -5690,7 +5824,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea406841-fcf0-4023-ae5c-4e7eb47d84a6")
-		(property "Reference" "TP1"
+		(property "Reference" "TP3"
 			(at 83.82 116.0779 0)
 			(effects
 				(font
@@ -5741,7 +5875,7 @@
 		(instances
 			(project ""
 				(path "/8955e49b-c499-4a31-89c9-ad9bd8b95ad7"
-					(reference "TP1")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
