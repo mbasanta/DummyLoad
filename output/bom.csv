@@ -30,5 +30,7 @@
 "R24","102","Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder","1","","667-ERJ-8ENF1020V","https://industrial.panasonic.com/cdbs/www-data/pdf/RDO0000/RDO0000C334.pdf"
 "R25","102","Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder","1","","667-ERJ-8ENF1020V","https://industrial.panasonic.com/cdbs/www-data/pdf/RDO0000/RDO0000C334.pdf"
 "R26","100K","Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder","1","","652-CRM1206QFX-1003E","https://www.mouser.com/catalog/specsheets/Bourns_1-11-2023_CRM-Q_datasheet.pdf"
-"TP1","Power Out","TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm","1","","","~"
+"TP1","RF In","TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm","1","","","~"
 "TP2","GND","TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm","1","","","~"
+"TP3","Power Out","TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm","1","","","~"
+"TP4","GND","TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm","1","","","~"
