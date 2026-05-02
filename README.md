@@ -11,7 +11,7 @@ From the schematic title block and notes:
 - Rated power (design intent): 10 W
 - Includes attenuation network:
   - Note in schematic: "40db Attenuation (use 3x 261 Ohm resistors for 30db)"
-- Includes a rectified voltage measurement point for RF power estimation
+- Includes a rectified voltage measurement point for RF power estimation (see [Dummy Load Voltages](output/Dummy%20Load%20Voltages.pdf) for the relationship between rectified voltage and radio power output)
 
 ## Schematic
 
